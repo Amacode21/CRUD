@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 100vh;
+  background-image: url("../img/wave.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5 all ease-in-out;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  outline: none;
+}
+.form-container {
+  background-color: #ffffff;
+  background-image: url("../img/wave.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

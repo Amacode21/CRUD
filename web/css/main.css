@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  overflow-x: hidden;
+  background-color: #eeeeee;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.cars {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.cars_unclicked,
+.cars_clicked {
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.cars_unclicked {
+  background-image: url("../img/wave.svg");
+}
+
+.cars_clicked {
+  background-image: url("../img/wave2.svg");
+}
+.cars:hover {
+  background-color: #222831;
+  color: whitesmoke;
+  transform: scale(1.1);
+  box-shadow: 4px 5px 10px #00adb5;
+}
+.form-select:focus {
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.hero {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* z-index: 999999; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831c5;
+  color: #eeeeee;
+  visibility: hidden;
+  text-align: justify;
+}
+img {
+  max-width: 420px !important;
+  min-width: auto;
+  max-height: 240px !important;
+  min-height: auto;
+}
+#alert {
+  transition: 0.9s all !important;
+}
+a {
+  text-decoration: none;
+}
